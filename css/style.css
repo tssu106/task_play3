@@ -1,4 +1,155 @@
+/* font */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Bold.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Bold.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-SemiBold.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-SemiBold.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Medium.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Medium.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Regular.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Regular.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Light.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Light.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.otf") format("opentype");
+}
+
+body {
+  font-family: "pretendard", sans-serif;
+  color: #111;
+}
+
 .contents-wrap{
+  position: relative;
   height: 100vh;
   background: #B6CA61 url(../images/bg.svg) no-repeat center / cover;
+}
+.main-contents,
+.inside-wrap,
+.outside-wrap {
+  width: 100%;
+  height: 100%;
+}
+.main-contents,
+.inside-wrap{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.inside-wrap{
+  z-index: 1;
+}
+.main-contents{
+  z-index: 3;
+}
+.Gradient {
+  position:absolute;
+  top:0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events:none;
+}
+.Gradient-all {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 70%, rgba(255, 255, 255, 0.5) 100%);
+}
+.Gradient-top{
+  background: linear-gradient(360deg, rgba(2, 0, 36, 0) 76%, rgba(255, 255, 255, 0.9) 100%)
+}
+.Gradient-bottom{
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 91%, rgba(0, 0, 0, 0.2) 100%);
+}
+.logo-set-wrap {
+  position: relative;
+  pointer-events:none;
+}
+.button-set-wrap,
+.logo-set-wrap .deco,
+.logo-set-wrap .text,
+.logo-set-wrap .logo{
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo-set-wrap .logo img{
+  height: 10rem;
+}
+.logo-set-wrap .text{
+  top: 15px;
+  z-index: 4;
+  transform: translateX(-140%);
+}
+.logo-set-wrap .text img{
+  height: 3.125rem;
+}
+.logo-set-wrap .deco{
+  top: 7.875rem;
+  transform: translateX(-52%);
+}
+.logo-set-wrap .line img{
+  height: 1.063rem;
+}
+.logo-set-wrap .star img{
+  position:absolute;
+  width: 1.875rem;
+  top: -8px;
+}
+.button-set-wrap {
+  bottom: 50px;
+  text-align: center;
+}
+.button-set-wrap button,
+.button-set-wrap a{
+  font-size: 1.125rem;
+  font-weight: 600;
+  width: 18.375rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
+  border-radius: 1.25rem;
+  box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+.button-set-wrap a{
+  position: relative;
+  display: inline-block;
+  background-color: #FFDD3C;
+  margin-bottom: 0.75rem;
+}
+.button-set-wrap a::before{
+  content: '';
+  width:1.875rem;
+  height: 1.421rem;
+  position: absolute;
+  background-image: url(../images/discode.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 30px;
+  top:50%;
+  transform: translateY(-50%);
+}
+.button-set-wrap button{
+  color: #fff;
+  background-color: #00B1FF;
 }
