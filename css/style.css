@@ -35,16 +35,25 @@
   font-display: swap;
   src: local("Pretendard Thin"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.woff2") format("woff2"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.woff") format("woff"), url("https://unaunao.github.io/Portfolio-Ver02/fonts/Pretendard-Thin.otf") format("opentype");
 }
-
+:hover ,
+*{
+  cursor: url(../images/mouse.svg) 2 2, auto ;
+}
+:active {
+  cursor: url(../images/mouse02.svg) 2 2, auto ;
+}
 body {
   font-family: "pretendard", sans-serif;
   color: #111;
-}
 
+}
+button{
+  font-family: "pretendard", sans-serif;
+}
 .contents-wrap{
   position: relative;
   height: 100vh;
-  background: #B6CA61 url(../images/bg.svg) no-repeat center / cover;
+  background: #B6CA61 url(../images/bg02.svg) no-repeat center / cover;
 }
 .main-contents,
 .inside-wrap,
@@ -94,28 +103,21 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.logo-set-wrap .logo img{
-  height: 10rem;
+.logo-set-wrap .logo{
+  top:5px;
 }
 .logo-set-wrap .text{
-  top: 15px;
+  top: 12px;
   z-index: 4;
   transform: translateX(-140%);
-}
-.logo-set-wrap .text img{
-  height: 3.125rem;
 }
 .logo-set-wrap .deco{
   top: 7.875rem;
   transform: translateX(-52%);
 }
-.logo-set-wrap .line img{
-  height: 1.063rem;
-}
 .logo-set-wrap .star img{
   position:absolute;
-  width: 1.875rem;
-  top: -8px;
+  top: -4px;
 }
 .button-set-wrap {
   bottom: 50px;
@@ -139,7 +141,7 @@ body {
 }
 .button-set-wrap a::before{
   content: '';
-  width:1.875rem;
+  width: 1.96rem;
   height: 1.421rem;
   position: absolute;
   background-image: url(../images/discode.svg);
