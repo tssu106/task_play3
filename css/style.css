@@ -183,14 +183,43 @@ button{
 /* ==========================
           Size control 
 ============================= */
+.objects-wrap .car-wrap{
+  width: 13%;
+}
+.objects-wrap .store-wrap{
+  width: 12%;
+}
 .objects-wrap .tree-t01{
   width: 10%;
 }
+.objects-wrap .character09-wrap{
+  width: 8%;
+}
+.objects-wrap .character08-wrap{
+  width: 6.5%;
+}
+.objects-wrap .character07-wrap,
 .objects-wrap .rama-wrap,
 .objects-wrap .campfire-wrap,
 .objects-wrap .log-wrap,
 .objects-wrap .tree-t02{
   width: 5%;
+}
+.objects-wrap .character06-wrap,
+.objects-wrap .character05-wrap,
+.objects-wrap .character04-wrap,
+.objects-wrap .character10_02{
+  width: 4%;
+}
+.objects-wrap .character01-wrap,
+.objects-wrap .character02-wrap{
+  width: 3.5%;
+}
+.objects-wrap .character10_01{
+  width: 3%;
+}
+.objects-wrap .character03-wrap{
+  width: 2.7%;
 }
 .objects-wrap .sign-wrap{
   width: 2.5%;
@@ -257,6 +286,102 @@ button{
 .objects-wrap .rama-wrap.rama02{
   transform: translate(803%, -168%);
 }
+.objects-wrap .car-wrap{
+  transform: translate(191%, -240%);
+}
+.objects-wrap .character09-wrap{
+  transform: translate(278%, -271%);
+}
+.objects-wrap .character10_01{
+  transform: translate(-788%, -134%);
+}
+.objects-wrap .character10_02{
+  transform: translate(-601%, -125%);
+}
+.objects-wrap .character08-wrap{
+  transform: translate(-122%, 56%);
+}
+.objects-wrap .character07-wrap{
+  transform: translate(-556%, -115%);
+}
+.objects-wrap .character05_01{
+  transform: translate(-492%, -115%);
+}
+.objects-wrap .character05_02{
+  transform: translate(-318%, 71%);
+}
+.objects-wrap .character05_03{
+  transform: translate(-821%, 338%);
+}
+.objects-wrap .character05_04{
+  transform: translate(178%, -210%);
+}
+.objects-wrap .character05_05{
+  transform: translate(264%, 17%);
+}
+.objects-wrap .character05_06{
+  transform: translate(748%, 14%);
+}
+.objects-wrap .character05_07{
+  transform: translate(644%, 236%);
+}
+.objects-wrap .store-wrap{
+  transform: translate(-217%, -22%);
+}
+.objects-wrap .character06-wrap{
+  transform: translate(-552%, 52%);
+}
+.objects-wrap .character04_01{
+  transform: translate(395%, -9%);
+}
+.objects-wrap .character04_02{
+  transform: translate(-245%, -36%);
+}
+.objects-wrap .character04_03{
+  transform: translate(-423%, 179%);
+}
+.objects-wrap .character03_01{
+  transform: translate(-509%, -83%);
+}
+.objects-wrap .character03_02{
+  transform: translate(93%, -173%);
+}
+.objects-wrap .character03_03{
+  transform: translate(1323%, 54%);
+}
+.objects-wrap .character02_01{
+  transform: translate(1023%, 275%);
+}
+.objects-wrap .character02_02{
+  transform: translate(238%, -76%);
+}
+.objects-wrap .character02_03{
+  transform: translate(220%, 85%);
+}
+.objects-wrap .character02_04{
+  transform: translate(-151%, -199%);
+}
+.objects-wrap .character02_05{
+  transform: translate(-664%, 202%);
+}
+.objects-wrap .character01_01{
+  transform: translate(-1023%, 135%);
+}
+.objects-wrap .character01_02{
+  transform: translate(-294%, -156%);
+}
+.objects-wrap .character01_03{
+  transform: translate(344%, 120%);
+}
+.objects-wrap .character01_04{
+  transform: translate(1004%, -46%);
+}
+.objects-wrap .character01_05{
+  transform: translate(904%, 91%);
+}
+.objects-wrap .character01_06{
+  transform: translate(1103%, 91%);
+}
 /* ==========================
           Apply animation 
 ============================= */
@@ -274,4 +399,13 @@ button{
 }
 .objects-wrap .objects:hover .shake{
   animation: shakeBottom 2s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects:hover .bounceR{
+  animation: bounceR 2s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects .character10_2:hover {
+  animation: fadeOutC 1s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects.character08-wrap:hover {
+
 }

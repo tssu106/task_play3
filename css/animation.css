@@ -70,7 +70,52 @@
 		transform: rotate(2deg);
 	}
 }
+@keyframes bounceR {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateX(18px);
+	}
 
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateX(13px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateX(10px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateX(6.5px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateX(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87%,
+	98% {
+		animation-timing-function: ease-out;
+		transform: translateX(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
 /* Entrance */
 @keyframes rollInRight {
 	0% {
@@ -92,5 +137,15 @@
 	100% {
 		opacity: 1;
 		transform: translateX(0);
+	}
+}
+/* Exit */
+@keyframes fadeOutC {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
 	}
 }
