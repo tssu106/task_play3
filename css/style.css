@@ -55,6 +55,7 @@ button{
   height: 100vh;
   background: #B6CA61 url(../images/bg02.svg) no-repeat center / cover;
 }
+.objects-wrap,
 .main-contents,
 .inside-wrap,
 .outside-wrap {
@@ -72,6 +73,7 @@ button{
 }
 .main-contents{
   z-index: 3;
+  pointer-events:none;
 }
 .Gradient {
   position:absolute;
@@ -118,10 +120,12 @@ button{
 .logo-set-wrap .star img{
   position:absolute;
   top: -4px;
+  z-index: 4;
 }
 .button-set-wrap {
   bottom: 50px;
   text-align: center;
+  pointer-events:initial;
 }
 .button-set-wrap button,
 .button-set-wrap a{
@@ -138,6 +142,7 @@ button{
   display: inline-block;
   background-color: #FFDD3C;
   margin-bottom: 0.75rem;
+  transition: 0.3s;
 }
 .button-set-wrap a::before{
   content: '';
@@ -154,4 +159,119 @@ button{
 .button-set-wrap button{
   color: #fff;
   background-color: #00B1FF;
+}
+.button-set-wrap a:focus,
+.button-set-wrap a:hover{
+  background-color: #f3d43b;
+  transform: scale(0.99);
+}
+.button-set-wrap button:focus,
+.button-set-wrap button:hover{
+  background-color: #00a4eb;
+  transform: scale(0.99);
+}
+.objects-wrap{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.objects-wrap .objects{
+  position: absolute;
+  left: 50%;
+  top:50%;
+}
+/* ==========================
+          Size control 
+============================= */
+.objects-wrap .tree-t01{
+  width: 10%;
+}
+.objects-wrap .rama-wrap,
+.objects-wrap .campfire-wrap,
+.objects-wrap .log-wrap,
+.objects-wrap .tree-t02{
+  width: 5%;
+}
+.objects-wrap .sign-wrap{
+  width: 2.5%;
+}
+.objects-wrap .flowers-wrap,
+.objects-wrap .grass-wrap,
+.objects-wrap .mushroom-wrap{
+  width: 2%;
+}
+.objects-wrap img{
+  width: 100%;
+}
+/* ==========================
+          Positioning 
+============================ */
+.objects-wrap .tree01-wrap{
+  transform: translate(-421%, -70%);
+}
+.objects-wrap .tree02-wrap{
+  transform: translate(-370%, -15%);
+}
+.objects-wrap .tree03-wrap{
+  transform: translate(-454%, 1%);
+}
+.objects-wrap .tree04-wrap{
+  transform: translate(-910%, -60%);
+}
+.objects-wrap .mushroom-wrap.mushroom01{
+  transform: translate(-1822%, 355%);
+}
+.objects-wrap .mushroom-wrap.mushroom02{
+  transform: translate(-1565%, 917%);
+}
+.objects-wrap .log-wrap{
+  transform: translate(-836%, 154%);
+}
+.objects-wrap .flowers-wrap.flowers01{
+  transform: translate(-1651%, 398%);
+}
+.objects-wrap .flowers-wrap.flowers02{
+  transform: translate(-824%, 667%);
+}
+.objects-wrap .flowers-wrap.flowers03{
+  transform: translate(-849%, -735%);
+}
+.objects-wrap .grass-wrap.grass01{
+  transform: translate(-1759%, 620%);
+}
+.objects-wrap .grass-wrap.grass02{
+  transform: translate(-849%, -925%);
+}
+.objects-wrap .campfire-wrap{
+  transform: translate(-794%, 460%);
+}
+.objects-wrap .sign-wrap.sign01{
+  transform: translate(-1215%, 349%);
+}
+.objects-wrap .sign-wrap.sign02{
+  transform: translate(693%, 321%);
+}
+.objects-wrap .rama-wrap.rama01{
+  transform: translate(253%, 267%);
+}
+.objects-wrap .rama-wrap.rama02{
+  transform: translate(803%, -168%);
+}
+/* ==========================
+          Apply animation 
+============================= */
+.logo-set-wrap .text img{
+  animation: wobbleLeft 2s ease 1.5s 1 normal forwards;
+}
+.logo-set-wrap .deco .star img{
+  animation: rollInRight 2s ease 0s 1 normal forwards;
+}
+.logo-set-wrap .deco .line img{
+  animation: fadeInRight 4s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects:hover .big {
+  animation: pulseRegular 1s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects:hover .shake{
+  animation: shakeBottom 2s ease 0s 1 normal forwards;
 }
