@@ -236,16 +236,16 @@ button{
           Positioning 
 ============================ */
 .objects-wrap .tree01-wrap{
-  transform: translate(-421%, -70%);
+  transform: translate(-431%, -70%);
 }
 .objects-wrap .tree02-wrap{
-  transform: translate(-370%, -15%);
+  transform: translate(-380%, -15%);
 }
 .objects-wrap .tree03-wrap{
-  transform: translate(-454%, 1%);
+  transform: translate(-464%, 1%);
 }
 .objects-wrap .tree04-wrap{
-  transform: translate(-910%, -60%);
+  transform: translate(-920%, -60%);
 }
 .objects-wrap .mushroom-wrap.mushroom01{
   transform: translate(-1822%, 355%);
@@ -281,10 +281,10 @@ button{
   transform: translate(693%, 321%);
 }
 .objects-wrap .rama-wrap.rama01{
-  transform: translate(253%, 267%);
+  transform: translate(273%, 267%);
 }
 .objects-wrap .rama-wrap.rama02{
-  transform: translate(803%, -168%);
+  transform: translate(829%, -168%);
 }
 .objects-wrap .car-wrap{
   transform: translate(191%, -240%);
