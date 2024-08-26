@@ -22,6 +22,7 @@
 
   <!-- jQuery -->
   <script src="./js/jquery-3.6.4.min.js"></script>
+  <script src="./js/commen.js"></script>
 
   <title>PLAY3</title>
   
@@ -33,6 +34,32 @@
 
     </header> -->
     <!-- e: header -->
+
+    <!-- s: warning -->
+    <div class="warning-wrap" id="warning01">
+        It seems like I can’t move yet…
+    </div>
+    <div class="warning-wrap" id="warning02">
+      Can you find a white bear — PAL?
+    </div>
+    <!-- e: warning -->
+
+    <!-- s: popup -->
+    <div class="popup-wrap">
+      <div class="popup" id="popup01">
+        <button type="button" class="btn-close"><img src="./images/close.svg" alt="close"></button>
+        <h2 class="title">
+          <img src="./images/notice.png" alt="Notice">
+        </h2>
+        <p>
+          This button will be activated on
+          <strong>October 1st (UTC) 06:00</strong>
+        </p>
+        <button type="button" class="btn-ok"><img src="./images/Button_ok.svg" alt="ok"></button>
+      </div>
+    </div>
+    <!-- e: popup -->
+    
     <!-- s: contents -->
     <section>
       <div class="contents-wrap">
@@ -62,7 +89,7 @@
                 <a href="https://discord.com/invite/xpla" target="_blank">Join us</a>
               </li>
               <li>
-                <button type="button">Learn More!</button>
+                <button type="button" id="popup-learn">Learn More!</button>
               </li>
             </ul>
           </div>
@@ -137,7 +164,7 @@
               </a>
             </div>
             <div class="objects character08-wrap">
-              <img src="./images/character08.svg" alt="main character" class="character08">
+              <img src="./images/character08.gif" alt="main character" class="character08">
             </div>
             <div class="objects character07-wrap">
               <img src="./images/character07.svg" alt="Elf" class="character07">
@@ -222,9 +249,6 @@
             </div>
           </div>
         </div> 
-        <div class="popup-wrap">
-
-        </div>
       </div>
     </section>
     <!-- e: contents -->
