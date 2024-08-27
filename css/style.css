@@ -259,15 +259,43 @@ button{
 .objects-wrap .store-wrap{
   width: 12%;
 }
+.character18_mv,
 .objects-wrap .tree-t01{
   width: 10%;
+}
+.character12_mv{
+  width: 8.5%;
 }
 .objects-wrap .character09-wrap{
   width: 8%;
 }
+.character11_mv02{
+  width: 6.8% !important;
+}
+.character17_mv,
+.character16_mv,
+.character14_mv,
+.character13_mv,
 .objects-wrap .character08-wrap{
   width: 6.5%;
 }
+.objects-wrap .character11_01,
+.objects-wrap .character11-wrap{
+  width: 6%;
+}
+.character11_02,
+.character14_02,
+.character19_01,
+.character18_01,
+.character15_01,
+.character14_01,
+.character13_01,
+.character12_01{
+  width: 5.5%;
+}
+.character19_mv,
+.character17_01,
+.character16_01,
 .objects-wrap .character07-wrap,
 .objects-wrap .rama-wrap,
 .objects-wrap .campfire-wrap,
@@ -275,11 +303,19 @@ button{
 .objects-wrap .tree-t02{
   width: 5%;
 }
+.character14_mv02,
+.objects-wrap .character11_mv{
+  width: 4.5%;
+}
 .objects-wrap .character06-wrap,
 .objects-wrap .character05-wrap,
 .objects-wrap .character04-wrap,
 .objects-wrap .character10_02{
   width: 4%;
+}
+.character16_mv,
+.character15_mv{
+  width: 3.8%;
 }
 .objects-wrap .character01-wrap,
 .objects-wrap .character02-wrap{
@@ -411,47 +447,84 @@ button{
 .objects-wrap .character04_03{
   transform: translate(-423%, 179%);
 }
-.objects-wrap .character03_01{
-  transform: translate(-509%, -83%);
-}
-.objects-wrap .character03_02{
-  transform: translate(93%, -173%);
-}
 .objects-wrap .character03_03{
   transform: translate(1323%, 54%);
 }
 .objects-wrap .character02_01{
   transform: translate(1023%, 275%);
 }
-.objects-wrap .character02_02{
-  transform: translate(238%, -76%);
-}
-.objects-wrap .character02_03{
-  transform: translate(220%, 85%);
-}
 .objects-wrap .character02_04{
   transform: translate(-151%, -199%);
-}
-.objects-wrap .character02_05{
-  transform: translate(-664%, 202%);
-}
-.objects-wrap .character01_01{
-  transform: translate(-1023%, 135%);
-}
-.objects-wrap .character01_02{
-  transform: translate(-294%, -156%);
 }
 .objects-wrap .character01_03{
   transform: translate(344%, 120%);
 }
-.objects-wrap .character01_04{
-  transform: translate(1004%, -46%);
+.objects-wrap .character11_01{
+  transform: translate(-668%, 81%);
 }
-.objects-wrap .character01_05{
-  transform: translate(904%, 91%);
+.objects-wrap .character11_mv{
+  transform: translate(-872%, 114%);
 }
-.objects-wrap .character01_06{
-  transform: translate(1103%, 91%);
+.objects-wrap .character12_01{
+  transform: translate(-435%, 112%);
+}
+.objects-wrap .character12_mv{
+  transform: translate(-297%, 1%);
+}
+.objects-wrap .character13_01{
+  transform: translate(-276%, -83%);
+}
+.objects-wrap .character13_mv{
+  transform: translate(-240%, -83%);
+}
+.objects-wrap .character14_01{
+  transform: translate(-207%, -161%);
+}
+.objects-wrap .character14_mv{
+  transform: translate(-191%, -172%);
+}
+.objects-wrap .character15_01{
+  transform: translate(20%, -160%);
+}
+.objects-wrap .character15_mv{
+  transform: translate(53%, -128%);
+}
+.objects-wrap .character16_01{
+  transform: translate(162%, -115%);
+}
+.objects-wrap .character16_mv{
+  transform: translate(231%, -111%);
+}
+.objects-wrap .character17_01{
+  transform: translate(138%, 45%);
+}
+.objects-wrap .character17_mv{
+  transform: translate(117%, 45%);
+}
+.objects-wrap .character18_01{
+  transform: translate(24%, 104%);
+}
+.objects-wrap .character18_mv{
+  transform: translate(16%, 68%);
+}
+.objects-wrap .character19_01{
+  transform: translate(624%, -54%);
+}
+.objects-wrap .character19_mv{
+  transform: translate(688%, -77%);
+}
+.objects-wrap .character14_02{
+  transform: translate(684%, 77%);
+}
+.objects-wrap .character14_mv02{
+  transform: translate(845%, -9%);
+}
+.objects-wrap .character11_02{
+  transform: translate(506%, 65%);
+}
+.objects-wrap .character11_mv02{
+  transform: translate(441%, 92%);
+
 }
 /* ==========================
           Apply animation 
@@ -477,6 +550,6 @@ button{
 .objects-wrap .objects .character10_2:hover {
   animation: fadeOutC 1s ease 0s 1 normal forwards;
 }
-.objects-wrap .objects.character08-wrap:hover {
-
+.gif_form{
+  display: none;
 }

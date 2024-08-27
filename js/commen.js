@@ -68,10 +68,62 @@ document.addEventListener('DOMContentLoaded', () => {
   btnClose.addEventListener('click', closePopup);
   btnOk.addEventListener('click', closePopup);
 
-  // 팝업 외부 클릭 시 닫기
-  // popupWrap.addEventListener('click', (event) => {
-  //     if (event.target === popupWrap) {
-  //         closePopup();
+  // 케릭터 제어
+  // // 모든 character11_01 요소와 gif_form 요소 선택
+  // const basic_form_elements = document.querySelectorAll('.basic_form');
+  // const character11_mv_elements = document.querySelectorAll('.gif_form');
+  
+  // // 각 basic_form 요소에 대해 hover 시 동작 설정
+  // basic_form_elements.forEach((element, index) => {
+  //   element.addEventListener('mouseover', function() {
+  //     // 해당 basic_form 요소와 연결된 gif_form 요소 선택
+  //     const gif_form = character11_mv_elements[index];
+
+  //     if (gif_form) {
+  //       // basic_form 요소 숨기기
+  //       element.style.display = 'none';
+
+  //       // gif_form 표시
+  //       gif_form.style.display = 'block';
+
+  //       // 10초 후에 처리
+  //       setTimeout(function() {
+  //         // gif_form 숨기기
+  //         gif_form.style.display = 'none';
+
+  //         // basic_form 다시 표시
+  //         element.style.display = 'block';
+  //       }, 10000); // 10초 = 10000 밀리초
   //     }
+  //   });
   // });
+   // 모든 basic_form 요소 선택
+    const basic_form_elements = document.querySelectorAll('.basic_form');
+      
+    // 각 basic_form 요소에 대해 hover 시 동작 설정
+    basic_form_elements.forEach((element) => {
+      element.addEventListener('mouseover', function() {
+        // 해당 basic_form 요소의 바로 다음 형제 요소인 gif_form 선택
+        const gif_form = element.nextElementSibling;
+
+        // 형제 요소가 gif_form인 경우만 처리
+        if (gif_form && gif_form.classList.contains('gif_form')) {
+          // basic_form 요소 숨기기
+          element.style.display = 'none';
+
+          // gif_form 표시
+          gif_form.style.display = 'block';
+
+          // 10초 후에 처리
+          setTimeout(function() {
+            // gif_form 숨기기
+            gif_form.style.display = 'none';
+
+            // basic_form 다시 표시
+            element.style.display = 'block';
+          }, 5000); // 10초 = 10000 밀리초
+        }
+      });
+    });
+
 });
