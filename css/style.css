@@ -254,14 +254,20 @@ button{
 /* ==========================
           Apply animation 
 ============================= */
+.logo-set-wrap .logo img{
+  animation: scaleUp 2s ease 0s 1 normal forwards;
+}
 .logo-set-wrap .text img{
-  animation: wobbleLeft 2s ease 1.5s 1 normal forwards;
+  animation: wobbleLeft 2s ease 4s 1 normal forwards;
+  /* animation: wobbleLeft 2s ease 18s infinite normal forwards; */
 }
 .logo-set-wrap .deco .star img{
-  animation: rollInRight 2s ease 0s 1 normal forwards;
+  opacity: 0;
+  animation: rollInRight 2s ease 2s 1 normal forwards;
 }
 .logo-set-wrap .deco .line img{
-  animation: fadeInRight 4s ease 0s 1 normal forwards;
+  opacity: 0;
+  animation: fadeInRight 3s ease 2s 1 normal forwards;
 }
 .objects-wrap .objects:hover .big {
   animation: pulseRegular 1s ease 0s 1 normal forwards;
