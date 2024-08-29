@@ -7,9 +7,13 @@
 .objects-wrap .store-wrap{
   width: 12%;
 }
+
 .character18_mv,
 .objects-wrap .tree-t01{
   width: 10%;
+}
+.board-wrap{
+  width: 9%;
 }
 .character12_mv{
   width: 8.5%;
@@ -20,6 +24,7 @@
 .character11_mv02{
   width: 6.8% !important;
 }
+.vending_machine-wrap,
 .character17_mv,
 .character16_mv,
 .character14_mv,
@@ -58,19 +63,21 @@
 }
 .objects-wrap .character06-wrap,
 .objects-wrap .character05-wrap,
-.objects-wrap .character04-wrap,
-.objects-wrap .character10_02{
+.objects-wrap .character04-wrap{
   width: 4%;
 }
 .character16_mv,
 .character15_mv{
   width: 3.8%;
 }
+.redbox-wrap,
+.goodframe-wrap,
 .objects-wrap .emotion_hi,
 .objects-wrap .character01-wrap,
 .objects-wrap .character02-wrap{
   width: 3.5%;
 }
+.pot-wrap,
 .objects-wrap .character10_01{
   width: 3%;
 }

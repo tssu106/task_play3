@@ -7,8 +7,20 @@ let dKey = 68;
 document.addEventListener("keyup", (event) => {
     if (event.keyCode === wKey || event.keyCode === aKey || event.keyCode === sKey || event.keyCode === dKey) {
         const warningDiv = document.getElementById('warning01');
-        warningDiv.style.display = 'block'; // 경고 메시지 표시
-    }
+       // 경고 메시지 표시 및 z-index 변경
+        warningDiv.style.opacity = '1'; 
+        warningDiv.style.zIndex = '6'; 
+
+        // 2초 뒤에 경고 메시지 숨기기
+        setTimeout(() => {
+            warningDiv.style.opacity = '0'; // 점점 사라지게 하기
+
+            // 사라진 후 3초 뒤에 z-index 변경
+            setTimeout(() => {
+                warningDiv.style.zIndex = '-1'; 
+            }, 3000); // 3초 후 z-index 변경
+       }, 1500); // 2초 후 메시지 숨기기
+      }
 });
 
 
@@ -19,8 +31,21 @@ document.addEventListener("click", () => {
   count += 1;
   if(count >= 4){
     const warningDiv = document.getElementById('warning02');
-    warningDiv.style.display = 'block'; // 경고 메시지 표시
-    count = 0;
+    // 경고 메시지 표시 및 z-index 변경
+    warningDiv.style.opacity = '1';
+    warningDiv.style.zIndex = '6'; 
+    
+    count = 0; // 클릭 카운트 초기화
+
+    // 2초 뒤에 경고 메시지 숨기기
+    setTimeout(() => {
+        warningDiv.style.opacity = '0'; // 서서히 사라지게 설정
+
+        // 사라진 후 3초 뒤에 z-index 변경
+        setTimeout(() => {
+            warningDiv.style.zIndex = '-1'; 
+        }, 3000); // 3초 후 z-index 변경
+    }, 1500); // 2초 후 메시지 숨기기
   }
   return ;
 });

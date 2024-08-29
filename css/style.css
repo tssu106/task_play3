@@ -53,7 +53,7 @@ button{
 .contents-wrap{
   position: relative;
   height: 100vh;
-  background: #B6CA61 url(../images/bg02.svg) no-repeat center / cover;
+  background: #B6CA61 url(../images/bg.svg) no-repeat center / cover;
 }
 .objects-wrap,
 .main-contents,
@@ -180,24 +180,35 @@ button{
   left: 50%;
   top:50%;
 }
+.character10_01 img{
+  transition: 0.1s;
+}
+.character10_01:focus img, 
+.character10_01:active img,
+.character10_01:hover img{
+  transform: scaleX(-1);
+}
 /* ==========================
           warning 
 ============================ */
 .warning-wrap {
-  display: none; /* 기본적으로 숨겨져 있음 */
+  /* display: none; */
+  opacity: 0;
   position: fixed;
   width: 552px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .warning-wrap {
   padding: 0.75rem;
   font-weight: 600;
   text-align: center;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 15px;
   z-index: 5; 
+  transition: 0.5s;
 }
 #warning01{
   color: #FBBC05;
@@ -205,7 +216,7 @@ button{
 }
 #warning02{
   color: #11CBC3;
-  background-color: rgba(51, 71, 123);
+  background-color: rgba(51, 71, 123, 0.9);
 }
 /* ==========================
           popup 
@@ -259,7 +270,6 @@ button{
 }
 .logo-set-wrap .text img{
   animation: wobbleLeft 2s ease 4s 1 normal forwards;
-  /* animation: wobbleLeft 2s ease 18s infinite normal forwards; */
 }
 .logo-set-wrap .deco .star img{
   opacity: 0;
@@ -275,15 +285,19 @@ button{
 .objects-wrap .objects:hover .shake{
   animation: shakeBottom 2s ease 0s 1 normal forwards;
 }
+.objects-wrap .objects:hover .heartBeat{
+  animation: heartBeat 2s ease 0s 1 normal forwards;
+}
+.objects-wrap .objects:hover .shakeH{
+  animation: shakeH 2s ease 0s 1 normal forwards;
+}
 .objects-wrap .objects:hover .bounceR{
   animation: bounceR 2s ease 0s 1 normal forwards;
-}
-.objects-wrap .objects .character10_2:hover {
-  animation: fadeOutC 1s ease 0s 1 normal forwards;
 }
 .objects-wrap .emotion-wrap img{
   animation: jelloV 2s ease 0s infinite normal forwards;
 }
+
 .gif_form{
   display: none;
 }
@@ -302,15 +316,15 @@ button{
   min-width: 3%;
   font-size: 0.875rem;
   font-weight: 600;
-  padding:0.25rem 0.5rem;
+  padding:0.5rem 0.5rem;
   background-color: #fff;
-  border:3.5px solid #111;
-  border-radius: 0.5rem;
+  border:3.5px solid #002B51;
+  border-radius: 1rem;
 }
 .speech-wrap img{
   width: 16.89px !important;
   position: absolute;
-  bottom: -54%;
+  bottom: -42%;
   left: 50%;
   z-index: 6;
   transform: scaleX(-1);
@@ -330,6 +344,15 @@ button{
   .contents-wrap{
     min-width: 1280px;
   }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
   .speech-wrap p{
     font-size: 0.625rem;
   }
@@ -337,6 +360,7 @@ button{
     width: 16px !important;
     bottom: -23%;
   }
+
 }
 @media only screen and (max-width:48em) {
  
@@ -345,7 +369,26 @@ button{
   }
   .speech-wrap img{
     width: 16.89px !important;
-    bottom: -54%;
+    bottom: -40%;
+  }
+  .logo-set-wrap .text{
+    top: 20px;
+    z-index: 4;
+    transform: translateX(-121%);
+  }
+  .logo-set-wrap .logo {
+    top: 16px;
+  }
+  .logo-set-wrap .logo img{
+    height: 140px;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
+  .button-set-wrap button, .button-set-wrap a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 2rem;
   }
 }
 /* 화면 비율 조정 */
@@ -356,10 +399,33 @@ button{
   .contents-wrap{
     width: 2800px;
   }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
+  .button-set-wrap button, .button-set-wrap a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 2rem;
+  }
 }
 @media only screen and (max-height:932px) and (max-width: 1280px) {
   .contents-wrap{
     width: 1900px;
+  }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
   }
 }
 @media only screen and (max-height:700px) {

@@ -14,7 +14,7 @@
   transform: translate(-551%, -24%);
 }
 .objects-wrap .tree06-wrap{
-  transform: translate(-380%, -15%);
+  transform: translate(-384%, -15%);
 }
 .objects-wrap .tree04-wrap{
   transform: translate(-920%, -60%);
@@ -41,19 +41,19 @@
   transform: translate(-824%, 667%);
 }
 .objects-wrap .flowers-wrap.flowers03{
-  transform: translate(-849%, -735%);
+  transform: translate(-997%, -656%);
 }
 .objects-wrap .grass-wrap.grass01{
   transform: translate(-1759%, 620%);
 }
 .objects-wrap .grass-wrap.grass02{
-  transform: translate(-849%, -925%);
+  transform: translate(-1000%, -815%);
 }
 .objects-wrap .campfire-wrap{
   transform: translate(-794%, 460%);
 }
 .objects-wrap .sign-wrap.sign01{
-  transform: translate(-1215%, 349%);
+  transform: translate(-1265%, 330%);
 }
 .objects-wrap .sign-wrap.sign02{
   transform: translate(693%, 321%);
@@ -62,22 +62,38 @@
   transform: translate(273%, 267%);
 }
 .objects-wrap .rama-wrap.rama02{
-  transform: translate(829%, -168%);
+  transform: translate(861%, -168%);
 }
 .objects-wrap .rama-t02{
-  transform: translate(798%, -136%);
+  transform: translate(833%, -136%);
+}
+.objects-wrap .rama02-t02{
+  transform: translate(188%, 205%);
 }
 .objects-wrap .car-wrap{
   transform: translate(191%, -240%);
 }
+.vending_machine-wrap{
+  transform: translate(295%, 39%);
+}
+.board-wrap{
+  transform: translate(329%, -95%);
+}
+.goodframe-wrap{
+  transform: translate(780%, -61%);
+}
+.redbox-wrap{
+  transform: translate(1125%, -47%);
+}
+.pot-wrap{
+  transform: translate(1402%, 0%);
+}
+
 .objects-wrap .character09-wrap{
   transform: translate(278%, -271%);
 }
 .objects-wrap .character10_01{
   transform: translate(-788%, -134%);
-}
-.objects-wrap .character10_02{
-  transform: translate(-601%, -125%);
 }
 .objects-wrap .character08-wrap{
   transform: translate(-122%, 56%);
@@ -92,7 +108,7 @@
   transform: translate(-318%, 71%);
 }
 .objects-wrap .character05_03{
-  transform: translate(-821%, 338%);
+  transform: translate(-884%, 314%);
 }
 .objects-wrap .character05_04{
   transform: translate(178%, -210%);
@@ -203,7 +219,7 @@
   transform: translate(-1735%, 175%);
 }
 .objects-wrap .emotion_tear{
-  transform: translate(-1450%, 520%);
+  transform: translate(-1560%, 486%)
 }
 .objects-wrap .emotion_shame{
   transform: translate(-974%, 42%);
