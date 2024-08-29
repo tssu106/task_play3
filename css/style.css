@@ -344,6 +344,15 @@ button{
   .contents-wrap{
     min-width: 1280px;
   }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
   .speech-wrap p{
     font-size: 0.625rem;
   }
@@ -351,6 +360,7 @@ button{
     width: 16px !important;
     bottom: -23%;
   }
+
 }
 @media only screen and (max-width:48em) {
  
@@ -359,7 +369,26 @@ button{
   }
   .speech-wrap img{
     width: 16.89px !important;
-    bottom: -54%;
+    bottom: -40%;
+  }
+  .logo-set-wrap .text{
+    top: 20px;
+    z-index: 4;
+    transform: translateX(-121%);
+  }
+  .logo-set-wrap .logo {
+    top: 16px;
+  }
+  .logo-set-wrap .logo img{
+    height: 140px;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
+  .button-set-wrap button, .button-set-wrap a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 2rem;
   }
 }
 /* 화면 비율 조정 */
@@ -370,10 +399,33 @@ button{
   .contents-wrap{
     width: 2800px;
   }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
+  }
+  .button-set-wrap button, .button-set-wrap a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 2rem;
+  }
 }
 @media only screen and (max-height:932px) and (max-width: 1280px) {
   .contents-wrap{
     width: 1900px;
+  }
+  .button-set-wrap,
+  .logo-set-wrap .deco,
+  .logo-set-wrap .text,
+  .logo-set-wrap .logo{
+    position:fixed;
+  }
+  .objects-wrap{
+    overflow: hidden;
   }
 }
 @media only screen and (max-height:700px) {
