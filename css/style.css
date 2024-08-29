@@ -287,12 +287,15 @@ button{
 }
 .speech-wrap{
   width: 11%;
+  text-align: center;
 }
 .speech-wrap p{
+  display: inline-block;
   position: relative;
   max-width: fit-content;
   min-width: 3%;
   font-size: 0.875rem;
+  font-weight: 600;
   padding:0.25rem 0.5rem;
   background-color: #fff;
   border:3.5px solid #111;

@@ -232,6 +232,21 @@
 .objects-wrap .emotion_love{
   transform: translate(1139%, -596%);
 }
+.objects-wrap .emotion_hi.hi01{
+  transform: translate(-766%, -238%);
+}
+.objects-wrap .emotion_sweat02{
+  transform: translate(-540%, 37%);
+}
+.objects-wrap .emotion_love02{
+  transform: translate(-215%, -458%);
+}
+.objects-wrap .emotion_tear02{
+  transform: translate(515%, -58%);
+}
+.objects-wrap .emotion_hi.hi02{
+  transform: translate(744%, 225%);
+}
 .objects-wrap .speech01{
-  transform: translate(-81%, -10%);
+  transform: translate(-81%, 35%);
 }

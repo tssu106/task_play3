@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // 이모션 풍선 4개의 그룹에서 랜덤하게 보이기
+  // 이모션 풍선 5개의 그룹에서 랜덤하게 보이기
   function getRandomElement(elements) {
     const index = Math.floor(Math.random() * elements.length);
     return elements[index];
@@ -123,5 +123,24 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleRandomVisibility('.emotion-group02', 1700); // 3 seconds
   toggleRandomVisibility('.emotion-group03', 2500); // 4 seconds
   toggleRandomVisibility('.emotion-group04', 3400); // 7 seconds
+  toggleRandomVisibility('.emotion-group05', 1000); // 7 seconds
 
+
+  // 텍스트 말풍선
+  let wordArr = ['Hello', 'My name is Abril', 'Nice to meet you!'];
+  let classNm = 'chracter_word_balloon'
+  let periodicTime = 2000;
+  let date = '2024/09/10';
+
+  function changeWordBalloon(wordArray, className, periodTime, date){
+    setInterval(()=>{
+      let arrayIndex = Math.floor(Math.random() * wordArray.length);
+
+      document.getElementsByClassName(className)[0].innerHTML = wordArray[arrayIndex];
+    }, periodTime);
+
+    
+  }
+
+  changeWordBalloon(wordArr, classNm, periodicTime, date);
 });
