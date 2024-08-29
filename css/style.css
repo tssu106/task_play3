@@ -275,8 +275,15 @@ button{
 .objects-wrap .objects .character10_2:hover {
   animation: fadeOutC 1s ease 0s 1 normal forwards;
 }
+.objects-wrap .speech-wrap img{
+  animation: jelloV 2s ease 0s infinite normal forwards;
+}
 .gif_form{
   display: none;
+}
+.speech-wrap{
+  opacity:0;
+  transition: 0.5s;
 }
 @media only screen and (max-height:932px) {
   .contents-wrap{

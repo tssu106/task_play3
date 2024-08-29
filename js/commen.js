@@ -98,6 +98,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // 이모션 풍선
+    // 이모션 풍선 4개의 그룹에서 랜덤하게 보이기
+  function getRandomElement(elements) {
+    const index = Math.floor(Math.random() * elements.length);
+    return elements[index];
+  }
+
+  function toggleRandomVisibility(groupClass, interval) {
+      const group = document.querySelector(groupClass);
+      const items = Array.from(group.querySelectorAll('.speech-wrap'));
+
+      function toggle() {
+        items.forEach(item => item.style.opacity = '0');
+        const randomItem = getRandomElement(items);
+        randomItem.style.opacity = '1';
+    }
+
+      toggle(); // Initially show a random element
+      setInterval(toggle, interval);
+  }
+
+  // Toggle speech-wrap elements at specified intervals
+  toggleRandomVisibility('.speech-group01', 5000); // 5 seconds
+  toggleRandomVisibility('.speech-group02', 3000); // 3 seconds
+  toggleRandomVisibility('.speech-group03', 4500); // 4 seconds
+  toggleRandomVisibility('.speech-group04', 7000); // 7 seconds
 
 });
