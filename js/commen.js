@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Toggle emotion-wrap elements at specified intervals
-  toggleRandomVisibility('.emotion-group01', 6000); // 5 seconds
+  toggleRandomVisibility('.emotion-group01', 4000); // 5 seconds
   toggleRandomVisibility('.emotion-group02', 1700); // 3 seconds
   toggleRandomVisibility('.emotion-group03', 2500); // 4 seconds
-  toggleRandomVisibility('.emotion-group04', 4400); // 7 seconds
+  toggleRandomVisibility('.emotion-group04', 3400); // 7 seconds
 
 });
