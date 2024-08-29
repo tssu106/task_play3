@@ -278,14 +278,6 @@ button{
 .gif_form{
   display: none;
 }
-@media only screen and (max-width:48em) {
-  section {
-    overflow-y: hidden;
-  }
-  .contents-wrap{
-    width: 1280px;
-  }
-}
 @media only screen and (max-height:932px) {
   .contents-wrap{
     width: 1900px;
@@ -294,5 +286,18 @@ button{
 @media only screen and (max-height:700px) {
   .contents-wrap{
     width: 1700px;
+  }
+}
+@media only screen and (max-width:48em) {
+  section {
+    overflow-y: hidden;
+  }
+  .contents-wrap{
+    min-width: 1280px;
+  }
+}
+@media only screen and (min-width:48em) {
+  .contents-wrap{
+    width: auto;
   }
 }
