@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // basic_form 다시 표시
             element.style.display = 'block';
-          }, 5000); // 10초 = 10000 밀리초
+          }, 3200); // 10초 = 10000 밀리초
         }
       });
     });

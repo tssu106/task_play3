@@ -250,282 +250,7 @@ button{
 .btn-ok img{
   height: 4.375rem;
 }
-/* ==========================
-          Size control 
-============================= */
-.objects-wrap .car-wrap{
-  width: 13%;
-}
-.objects-wrap .store-wrap{
-  width: 12%;
-}
-.character18_mv,
-.objects-wrap .tree-t01{
-  width: 10%;
-}
-.character12_mv{
-  width: 8.5%;
-}
-.objects-wrap .character09-wrap{
-  width: 8%;
-}
-.character11_mv02{
-  width: 6.8% !important;
-}
-.character17_mv,
-.character16_mv,
-.character14_mv,
-.character13_mv,
-.objects-wrap .character08-wrap{
-  width: 6.5%;
-}
-.objects-wrap .character11_01,
-.objects-wrap .character11-wrap{
-  width: 6%;
-}
-.character11_02,
-.character14_02,
-.character19_01,
-.character18_01,
-.character15_01,
-.character14_01,
-.character13_01,
-.character12_01{
-  width: 5.5%;
-}
-.character19_mv,
-.character17_01,
-.character16_01,
-.objects-wrap .character07-wrap,
-.objects-wrap .rama-wrap,
-.objects-wrap .campfire-wrap,
-.objects-wrap .log-wrap,
-.objects-wrap .tree-t02{
-  width: 5%;
-}
-.character14_mv02,
-.objects-wrap .character11_mv{
-  width: 4.5%;
-}
-.objects-wrap .character06-wrap,
-.objects-wrap .character05-wrap,
-.objects-wrap .character04-wrap,
-.objects-wrap .character10_02{
-  width: 4%;
-}
-.character16_mv,
-.character15_mv{
-  width: 3.8%;
-}
-.objects-wrap .character01-wrap,
-.objects-wrap .character02-wrap{
-  width: 3.5%;
-}
-.objects-wrap .character10_01{
-  width: 3%;
-}
-.objects-wrap .character03-wrap{
-  width: 2.7%;
-}
-.objects-wrap .sign-wrap{
-  width: 2.5%;
-}
-.objects-wrap .flowers-wrap,
-.objects-wrap .grass-wrap,
-.objects-wrap .mushroom-wrap{
-  width: 2%;
-}
-.objects-wrap img{
-  width: 100%;
-}
 
-/* ==========================
-          Positioning 
-============================ */
-.objects-wrap .tree01-wrap{
-  transform: translate(-431%, -70%);
-}
-.objects-wrap .tree02-wrap{
-  transform: translate(-380%, -15%);
-}
-.objects-wrap .tree03-wrap{
-  transform: translate(-464%, 1%);
-}
-.objects-wrap .tree04-wrap{
-  transform: translate(-920%, -60%);
-}
-.objects-wrap .mushroom-wrap.mushroom01{
-  transform: translate(-1822%, 355%);
-}
-.objects-wrap .mushroom-wrap.mushroom02{
-  transform: translate(-1565%, 917%);
-}
-.objects-wrap .log-wrap{
-  transform: translate(-836%, 154%);
-}
-.objects-wrap .flowers-wrap.flowers01{
-  transform: translate(-1651%, 398%);
-}
-.objects-wrap .flowers-wrap.flowers02{
-  transform: translate(-824%, 667%);
-}
-.objects-wrap .flowers-wrap.flowers03{
-  transform: translate(-849%, -735%);
-}
-.objects-wrap .grass-wrap.grass01{
-  transform: translate(-1759%, 620%);
-}
-.objects-wrap .grass-wrap.grass02{
-  transform: translate(-849%, -925%);
-}
-.objects-wrap .campfire-wrap{
-  transform: translate(-794%, 460%);
-}
-.objects-wrap .sign-wrap.sign01{
-  transform: translate(-1215%, 349%);
-}
-.objects-wrap .sign-wrap.sign02{
-  transform: translate(693%, 321%);
-}
-.objects-wrap .rama-wrap.rama01{
-  transform: translate(273%, 267%);
-}
-.objects-wrap .rama-wrap.rama02{
-  transform: translate(829%, -168%);
-}
-.objects-wrap .car-wrap{
-  transform: translate(191%, -240%);
-}
-.objects-wrap .character09-wrap{
-  transform: translate(278%, -271%);
-}
-.objects-wrap .character10_01{
-  transform: translate(-788%, -134%);
-}
-.objects-wrap .character10_02{
-  transform: translate(-601%, -125%);
-}
-.objects-wrap .character08-wrap{
-  transform: translate(-122%, 56%);
-}
-.objects-wrap .character07-wrap{
-  transform: translate(-556%, -115%);
-}
-.objects-wrap .character05_01{
-  transform: translate(-492%, -115%);
-}
-.objects-wrap .character05_02{
-  transform: translate(-318%, 71%);
-}
-.objects-wrap .character05_03{
-  transform: translate(-821%, 338%);
-}
-.objects-wrap .character05_04{
-  transform: translate(178%, -210%);
-}
-.objects-wrap .character05_05{
-  transform: translate(264%, 17%);
-}
-.objects-wrap .character05_06{
-  transform: translate(748%, 14%);
-}
-.objects-wrap .character05_07{
-  transform: translate(644%, 236%);
-}
-.objects-wrap .store-wrap{
-  transform: translate(-217%, -22%);
-}
-.objects-wrap .character06-wrap{
-  transform: translate(-552%, 52%);
-}
-.objects-wrap .character04_01{
-  transform: translate(395%, -9%);
-}
-.objects-wrap .character04_02{
-  transform: translate(-245%, -36%);
-}
-.objects-wrap .character04_03{
-  transform: translate(-423%, 179%);
-}
-.objects-wrap .character03_03{
-  transform: translate(1323%, 54%);
-}
-.objects-wrap .character02_01{
-  transform: translate(1023%, 275%);
-}
-.objects-wrap .character02_04{
-  transform: translate(-151%, -199%);
-}
-.objects-wrap .character01_03{
-  transform: translate(344%, 120%);
-}
-.objects-wrap .character11_01{
-  transform: translate(-668%, 81%);
-}
-.objects-wrap .character11_mv{
-  transform: translate(-872%, 114%);
-}
-.objects-wrap .character12_01{
-  transform: translate(-435%, 112%);
-}
-.objects-wrap .character12_mv{
-  transform: translate(-297%, 1%);
-}
-.objects-wrap .character13_01{
-  transform: translate(-276%, -83%);
-}
-.objects-wrap .character13_mv{
-  transform: translate(-240%, -83%);
-}
-.objects-wrap .character14_01{
-  transform: translate(-207%, -161%);
-}
-.objects-wrap .character14_mv{
-  transform: translate(-191%, -172%);
-}
-.objects-wrap .character15_01{
-  transform: translate(20%, -160%);
-}
-.objects-wrap .character15_mv{
-  transform: translate(53%, -128%);
-}
-.objects-wrap .character16_01{
-  transform: translate(162%, -115%);
-}
-.objects-wrap .character16_mv{
-  transform: translate(231%, -111%);
-}
-.objects-wrap .character17_01{
-  transform: translate(138%, 45%);
-}
-.objects-wrap .character17_mv{
-  transform: translate(117%, 45%);
-}
-.objects-wrap .character18_01{
-  transform: translate(24%, 104%);
-}
-.objects-wrap .character18_mv{
-  transform: translate(16%, 68%);
-}
-.objects-wrap .character19_01{
-  transform: translate(624%, -54%);
-}
-.objects-wrap .character19_mv{
-  transform: translate(688%, -77%);
-}
-.objects-wrap .character14_02{
-  transform: translate(684%, 77%);
-}
-.objects-wrap .character14_mv02{
-  transform: translate(845%, -9%);
-}
-.objects-wrap .character11_02{
-  transform: translate(506%, 65%);
-}
-.objects-wrap .character11_mv02{
-  transform: translate(441%, 92%);
-
-}
 /* ==========================
           Apply animation 
 ============================= */
@@ -552,4 +277,22 @@ button{
 }
 .gif_form{
   display: none;
+}
+@media only screen and (max-width:48em) {
+  section {
+    overflow-y: hidden;
+  }
+  .contents-wrap{
+    width: 1280px;
+  }
+}
+@media only screen and (max-height:932px) {
+  .contents-wrap{
+    width: 1900px;
+  }
+}
+@media only screen and (max-height:700px) {
+  .contents-wrap{
+    width: 1700px;
+  }
 }
