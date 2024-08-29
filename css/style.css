@@ -275,15 +275,78 @@ button{
 .objects-wrap .objects .character10_2:hover {
   animation: fadeOutC 1s ease 0s 1 normal forwards;
 }
-.objects-wrap .speech-wrap img{
+.objects-wrap .emotion-wrap img{
   animation: jelloV 2s ease 0s infinite normal forwards;
 }
 .gif_form{
   display: none;
 }
-.speech-wrap{
+.emotion-wrap{
   opacity:0;
   transition: 0.5s;
+}
+.speech-wrap{
+  width: 11%;
+}
+.speech-wrap p{
+  position: relative;
+  max-width: fit-content;
+  min-width: 3%;
+  font-size: 0.875rem;
+  padding:0.25rem 0.5rem;
+  background-color: #fff;
+  border:3.5px solid #111;
+  border-radius: 0.5rem;
+}
+.speech-wrap img{
+  width: 16.89px !important;
+  position: absolute;
+  bottom: -54%;
+  left: 50%;
+  z-index: 6;
+  transform: scaleX(-1);
+}
+@media only screen and (min-width:48em) {
+  .speech-wrap p{
+    font-size: 0.875rem;
+  }
+  .contents-wrap{
+    width: auto;
+  }
+}
+@media only screen and (max-width:62.5em) {
+  section {
+    overflow-y: hidden;
+  }
+  .contents-wrap{
+    min-width: 1280px;
+  }
+  .speech-wrap p{
+    font-size: 0.625rem;
+  }
+  .speech-wrap img {
+    width: 16px !important;
+    bottom: -23%;
+  }
+}
+@media only screen and (max-width:48em) {
+ 
+  .speech-wrap p{
+    font-size: 0.875rem;
+  }
+  .speech-wrap img{
+    width: 16.89px !important;
+    bottom: -54%;
+  }
+}
+/* 화면 비율 조정 */
+@media only screen and (min-height:932px) {
+  section{
+    overflow-x: scroll;
+  }
+  .contents-wrap{
+    width: 2800px;
+  }
 }
 @media only screen and (max-height:932px) {
   .contents-wrap{
@@ -293,18 +356,5 @@ button{
 @media only screen and (max-height:700px) {
   .contents-wrap{
     width: 1700px;
-  }
-}
-@media only screen and (max-width:48em) {
-  section {
-    overflow-y: hidden;
-  }
-  .contents-wrap{
-    min-width: 1280px;
-  }
-}
-@media only screen and (min-width:48em) {
-  .contents-wrap{
-    width: auto;
   }
 }

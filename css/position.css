@@ -199,36 +199,39 @@
 .objects-wrap .character11_mv02{
   transform: translate(441%, 92%);
 }
-.objects-wrap .speech-laugh{
+.objects-wrap .emotion-laugh{
   transform: translate(-1735%, 175%);
 }
-.objects-wrap .speech_tear{
+.objects-wrap .emotion_tear{
   transform: translate(-1450%, 520%);
 }
-.objects-wrap .speech_shame{
+.objects-wrap .emotion_shame{
   transform: translate(-974%, 42%);
 }
-.objects-wrap .speech_angry{
+.objects-wrap .emotion_angry{
   transform: translate(-736%, 256%);
 }
-.objects-wrap .speech_exclamation{
+.objects-wrap .emotion_exclamation{
   transform: translate(-636%, -256%);
 }
-.objects-wrap .speech_nowords{
+.objects-wrap .emotion_nowords{
   transform: translate(365%, -463%);
 }
-.objects-wrap .speech_mindless{
+.objects-wrap .emotion_mindless{
   transform: translate(744%, -120%);
 }
-.objects-wrap .speech_puzzle{
+.objects-wrap .emotion_puzzle{
   transform: translate(576%, 220%);
 }
-.objects-wrap .speech_sweat{
+.objects-wrap .emotion_sweat{
   transform: translate(1400%, -53%);
 }
-.objects-wrap .speech_nowords02{
+.objects-wrap .emotion_nowords02{
   transform: translate(1657%, 397%);
 }
-.objects-wrap .speech_love{
+.objects-wrap .emotion_love{
   transform: translate(1139%, -596%);
+}
+.objects-wrap .speech01{
+  transform: translate(-81%, -10%);
 }

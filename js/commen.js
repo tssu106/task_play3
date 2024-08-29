@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function toggleRandomVisibility(groupClass, interval) {
       const group = document.querySelector(groupClass);
-      const items = Array.from(group.querySelectorAll('.speech-wrap'));
+      const items = Array.from(group.querySelectorAll('.emotion-wrap'));
 
       function toggle() {
         items.forEach(item => item.style.opacity = '0');
@@ -118,10 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
       setInterval(toggle, interval);
   }
 
-  // Toggle speech-wrap elements at specified intervals
-  toggleRandomVisibility('.speech-group01', 5000); // 5 seconds
-  toggleRandomVisibility('.speech-group02', 3000); // 3 seconds
-  toggleRandomVisibility('.speech-group03', 4500); // 4 seconds
-  toggleRandomVisibility('.speech-group04', 7000); // 7 seconds
+  // Toggle emotion-wrap elements at specified intervals
+  toggleRandomVisibility('.emotion-group01', 6000); // 5 seconds
+  toggleRandomVisibility('.emotion-group02', 1700); // 3 seconds
+  toggleRandomVisibility('.emotion-group03', 2500); // 4 seconds
+  toggleRandomVisibility('.emotion-group04', 4400); // 7 seconds
 
 });
