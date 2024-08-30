@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let targetElement = document.querySelector('section');
-    let movingSpeed = 30;   //숫자를 내리면 빨라진다.
-    let positionCoord = 2;  //숫자를 내리면 더 부드럽게 움직이는것 처럼 보임.
+    let movingSpeed = 40;   //숫자를 내리면 빨라진다.
+    let positionCoord = 1;  //숫자를 내리면 더 부드럽게 움직이는것 처럼 보임.
     let halfPosition = (targetElement.scrollWidth - targetElement.clientWidth) / 2;
     let scrollLeft = targetElement.scrollWidth - targetElement.offsetWidth;
     let moveLimit = 560;    //좌우 이동 제한
