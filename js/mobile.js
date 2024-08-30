@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     let targetElement = document.querySelector('section');
-    let movingSpeed = 6;   //숫자를 내리면 빨라진다.
+    let movingSpeed = 30;   //숫자를 내리면 빨라진다.
     let positionCoord = 2;  //숫자를 내리면 더 부드럽게 움직이는것 처럼 보임.
     let halfPosition = (targetElement.scrollWidth - targetElement.clientWidth) / 2;
     let scrollLeft = targetElement.scrollWidth - targetElement.offsetWidth;
@@ -15,31 +15,42 @@ document.addEventListener("DOMContentLoaded", function () {
         return targetElement.scrollLeft;
     }
 
+    //클릭했을때 clearInterval 실행으로 이동 멈춤
+    let stopMoveIfClick = (intervalId) => {
+        document.addEventListener('click', () => clearInterval(intervalId))
+    }
+
     let moveToLeftFromCenter = (scrollPosition) => new Promise(resolve => {
         let position = scrollPosition;
+
+        console.log('moveToLeftFromCenter position', position);
 
         let intervalId = setInterval(() => {
             targetElement.scrollTo(position, 0);
 
             position -= positionCoord;
 
-            if (position <= 0) {
+            if (position <= 350) {  //이동 제한 350
                 resolve(intervalId);
             }
         }, movingSpeed);
+
+        stopMoveIfClick(intervalId);
     });
 
     let moveToRightFromLeft = () => new Promise(resolve => {
-        let currentPosition = 0;
+        let currentPosition = targetElement.scrollLeft;
         let intervalId = setInterval(() => {
             targetElement.scrollTo(currentPosition, 0);
 
             currentPosition += positionCoord;
 
-            if (currentPosition >= scrollLeft) {
+            if (currentPosition >= scrollLeft - 400) {  //이동 제한 400
                 resolve(intervalId);
             }
         }, movingSpeed);
+
+        stopMoveIfClick(intervalId);
     });
 
     let moveToCenterFromRight = () => new Promise(resolve => {
@@ -53,6 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 resolve(intervalId);
             }
         }, movingSpeed); //좌로 이동 속도 조절
+
+        stopMoveIfClick(intervalId);
     });
 
 
@@ -63,10 +76,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         await moveToRightFromLeft().then(data => {
             clearInterval(data);
-        });;
+        });
         await moveToCenterFromRight().then(data => {
             clearInterval(data);
-        });;
+        });
     }
 
 
