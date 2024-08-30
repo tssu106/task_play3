@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let positionCoord = 2;  //숫자를 내리면 더 부드럽게 움직이는것 처럼 보임.
     let halfPosition = (targetElement.scrollWidth - targetElement.clientWidth) / 2;
     let scrollLeft = targetElement.scrollWidth - targetElement.offsetWidth;
+    let moveLimit = 560;    //좌우 이동 제한
 
     let isMobile = () => {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             position -= positionCoord;
 
-            if (position <= 350) {  //이동 제한 350
+            if (position <= moveLimit) {
                 resolve(intervalId);
             }
         }, movingSpeed);
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             currentPosition += positionCoord;
 
-            if (currentPosition >= scrollLeft - 400) {  //이동 제한 400
+            if (currentPosition >= (scrollLeft - moveLimit)) {
                 resolve(intervalId);
             }
         }, movingSpeed);
